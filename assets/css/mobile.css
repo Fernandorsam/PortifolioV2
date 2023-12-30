@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.activeMenu{
+  display:none;
+}
+
+
+#fade{
+  background-color: #000000;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.8;
+  /* display:block; */
+}
+#fade #closeMenu{
+  top: 0;
+  float: right;
+  background-color:transparent;
+  width: 6vw;
+  height: 5vh;
+  margin: 8px 25px 0 0 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#fade #closeMenu span{
+  width: 1px;
+  height: 5vh;
+  background-color:#fdfdff ;
+  
+}
+
+#fade #closeMenu #one{
+  rotate: 45deg ;
+}
+#fade #closeMenu #two{
+  rotate: -55deg;
+}
+
+.container{
+  width: calc(100%-2);
+  height: 100vh;
+  padding: 5px;
+  background-color: rgb(201, 199, 199);
+ 
+}
+.container header{
+    width: 100%;
+    height: 13vh;
+}
+ header .title-container{
+    width: fit-content;
+    height: fit-content;
+    margin: 6vh auto;
+    margin-left: 30vw;
+}
+header .animated-title {
+  font-size: 5vw;
+}
+
+.container #iconMenu{
+   top: 0;
+   left: 0;
+   width: 10vw;
+   height: fit-content;
+   margin: 28px 0 0 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 5px;
+   position: fixed;
+   
+}
+
+.container #iconMenu span{
+  width: auto;
+  height: 0.8vh;
+  background-color: black;
+}
+ 
+.container #navigation{
+  background-color: #929ec24d;
+  top: 0;
+  position: fixed;
+  opacity: 0.6;
+  width: 40vw;
+  height: 100vh;
+  padding: 30px 50px;
+  z-index: 2;
+  /* display:block; */
+ 
+ 
+}
+.container #navigation nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 50%;
+ 
+}
+.container #navigation nav #logo{
+  background-color: transparent;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 48px;
+
+}
+.container #navigation nav #logo img{
+  width: 12vw;
+  height: 12vh;
+ 
+}
+.container #navigation nav #menu{
+  width:fit-content;
+  height: auto;
+  padding: 10px;
+ 
+}
+#navigation nav #menu ul{
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  padding: 20px;
+ 
+}
+#navigation nav #menu ul li{
+ width:fit-content;
+ height: auto;
+ font-size: 1rem;
+ font-weight: 400;
+}
+#navigation nav #menu ul li a{
+  color: #dcdcf7;
+  font-size: 4vw;
+text-decoration: none; 
+
+}
